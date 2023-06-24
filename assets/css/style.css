@@ -16,11 +16,11 @@
     background: url(../images/mario-4.png);
     width: 80px;
     height: 90px;
-    animation: anim 3s ease-in-out 2s infinite;
+    animation: marioWalking 3s ease-in-out 2s infinite;
 }
 
 
-@keyframes anim {
+@keyframes marioWalking{
     0%{
         background: url(../images/mario-1.png);
         transform: translate(10px);
