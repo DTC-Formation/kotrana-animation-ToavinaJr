@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -11,9 +12,11 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 20px;
 }
 
 /* ******  Styling the animaton    ****** */
+
 .mario{
     background: url(../images/mario-5.png);
     width: 80px;
@@ -76,6 +79,8 @@
     background: #161515;
     animation: wiggle 2s linear infinite;
     color: #e5e90d;
+    width: fit-content;
+    height: fit-content;
     border-radius: 10px;
     border-bottom: solid 5px crimson;
 }
@@ -97,34 +102,30 @@
         transform: rotateZ(0deg);
     } 
 }
-/* *********************************** */
 
-/* .fire{
-    background: ur;
-} */
 
 /* *************************************** */
 
 .steam-container{
-    width: 300px;
-    height: 300px;
     background: rgb(81, 81, 243);
-    position: absolute;
     border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    position: relative;
 }
 
 .steam{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: #fff;
     position: absolute;
-    bottom: 0;
-    left: 100px;
+    top: 300px;
+    left: 40%;
 }
 
 .steam-1{
-    animation: steam-1-animation 1s ease-out infinite;
+    animation: steam-1-animation 2s ease-out infinite;
 }
 
 @keyframes steam-1-animation {
@@ -139,7 +140,7 @@
 }
 
 .steam-2{
-    animation: steam-2-animation 2s ease-out infinite;
+    animation: steam-2-animation 1s ease-out infinite;
 }
 
 @keyframes steam-2-animation {
@@ -154,7 +155,7 @@
 }
 
 .steam-3{
-    animation: steam-3-animation 3s ease-out infinite;
+    animation: steam-3-animation 1s ease-out infinite;
 }
 
 @keyframes steam-3-animation {
@@ -169,7 +170,7 @@
   }
 
 .steam-4{
-    animation: steam-4-animation 4s ease-in-out infinite;
+    animation: steam-4-animation 1s ease-in-out infinite;
 }
 
 @keyframes steam-4-animation {
@@ -184,7 +185,7 @@
   }
 
 .steam-5{
-    animation: steam-5-animation 5s ease-in-out infinite;
+    animation: steam-5-animation 1s ease-in-out infinite;
 }
 
 @keyframes steam-5-animation {
@@ -212,3 +213,4 @@
         opacity: 0;
     }
   }
+
