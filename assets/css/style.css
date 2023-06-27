@@ -410,7 +410,9 @@ body{
 
     .box{
         font-size: 28px;
+        width: fit-content;
     }
+    
     .container div{
         margin: 10px;
     }
