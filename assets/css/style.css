@@ -24,6 +24,8 @@ body{
 
 .mario-container{
     width: 350px;
+    height: fit-content;
+    overflow-y: hidden;
 }
 
 .mario{
@@ -154,6 +156,7 @@ body{
     width: 350px;
     height: 350px;
     position: relative;
+    overflow-y: hidden;
 }
 
 .steam{
@@ -283,7 +286,7 @@ body{
 .buble-container{
     display: flex;
     width: 200px;
-    height: 200px;
+    height: 120px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -292,18 +295,20 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: gray;
 }
 
 .buble-1{
     animation: bubleAnimation .6s ease-in-out alternate .2s infinite; 
+    background: green;
 }
 
 .buble-2{
     animation: bubleAnimation .6s ease-in-out alternate .4s infinite; 
+    background: red;
 }
 .buble-3{
     animation: bubleAnimation .6s ease-in-out alternate .6s infinite; 
+    background: #000;
 }
 
 @keyframes bubleAnimation{
@@ -314,15 +319,15 @@ body{
 /* *************************** */
 
 .circle-container{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     position: relative;
 }
 
 .circle{
     position: absolute;
-    top: 160px;
-    left: 160px;
+    top: 100px;
+    left: 100px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -386,4 +391,66 @@ body{
     to{
         transform: translateY(60px);
     } 
+}
+
+/* **********************************************
+*************   Responsivness   *************
+******************************************** */
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .box{
+        font-size: 20px;
+    }
+    .container div{
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        width: 90%;
+        margin: 5%;
+    }
+
+    .container div{
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 995px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .container{
+        width: 40%;
+    }
+}
+
+@media only screen and(min-width: 1200px) {
+    
 }
