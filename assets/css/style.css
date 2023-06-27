@@ -261,8 +261,10 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: solid 10px rgb(3, 2, 2);
     border-top: 10px solid #efff16;
+    border-bottom: 10px solid green;
+    border-left: 10px solid red;
+    border-right: 10px solid black;
     animation: spin 1.2s linear infinite;
 }
 
@@ -276,6 +278,39 @@ body{
     
 }
 
+/* ******************************** */
+
+.buble-container{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buble{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: gray;
+}
+
+.buble-1{
+    animation: bubleAnimation .6s ease-in-out alternate .2s infinite; 
+}
+
+.buble-2{
+    animation: bubleAnimation .6s ease-in-out alternate .4s infinite; 
+}
+.buble-3{
+    animation: bubleAnimation .6s ease-in-out alternate .6s infinite; 
+}
+
+@keyframes bubleAnimation{
+    100%{
+        transform: scale(1.2);
+    }
+}
 /* *************************** */
 
 .circle-container{
