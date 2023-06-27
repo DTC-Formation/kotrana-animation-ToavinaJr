@@ -257,7 +257,21 @@ body{
   }
 
 /* ******************************* */
-.wifi-container{
-    width: 400px;
-    background: black;
+.spinner{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 10px rgb(3, 2, 2);
+    border-top: 10px solid #efff16;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
 }
