@@ -275,3 +275,80 @@ body{
     }
     
 }
+
+/* *************************** */
+
+.circle-container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: transparent;
+    animation-fill-mode: backwards;
+}
+
+.circle-1{
+    animation: moveToLeft 1s linear infinite;
+    border: 10px solid rgb(66, 212, 7);
+}
+
+@keyframes moveToLeft {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-60px);
+    }
+    
+}
+
+.circle-2{
+    animation: moveToRight 1s linear infinite;
+    border: 10px solid yellow;
+}
+
+@keyframes moveToRight {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(60px);
+    }
+    
+}
+
+.circle-3{
+    animation: moveToUp 1s linear infinite;
+    border: solid 10px black;
+}
+
+@keyframes moveToUp {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-60px);
+    }  
+}
+
+.circle-4{
+    animation: moveToDown 1s linear infinite;
+    border: 10px solid red;
+}
+
+@keyframes moveToDown {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(60px);
+    } 
+}
