@@ -45,6 +45,9 @@ body{
     animation: marioWalking 3s ease 2s infinite;
 }
 
+.mario:hover{
+    animation-play-state: paused;
+}
 
 @keyframes marioWalking{
     0%{
@@ -140,6 +143,9 @@ body{
     border-bottom: solid 5px rgba(185, 24, 24, 0.884);
 }
 
+.box:hover{
+    animation-play-state: paused;
+}
 @keyframes wiggle {
     0%, 10%{
         transform: rotateZ(12deg);
@@ -179,6 +185,10 @@ body{
     position: absolute;
     top: 300px;
     left: 40%;
+}
+
+.steam:hover{
+    animation-play-state: paused;
 }
 
 .steam-1{
@@ -295,6 +305,10 @@ body{
     animation: spin 1.2s linear infinite;
 }
 
+.spinner:hover{
+    animation-play-state: paused;
+}
+
 @keyframes spin {
     from{
         transform: rotate(0deg);
@@ -323,6 +337,10 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.buble:hover{
+    animation-play-state: paused;
 }
 
 .buble-1{
@@ -364,6 +382,10 @@ body{
     border-radius: 50%;
     background: transparent;
     animation-fill-mode: backwards;
+}
+
+.circle:hover{
+    animation-play-state: paused;
 }
 
 .circle-1{
