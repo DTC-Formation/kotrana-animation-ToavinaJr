@@ -181,7 +181,6 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: var(--color-primary);
     position: absolute;
     top: 300px;
     left: 40%;
@@ -193,6 +192,7 @@ body{
 
 .steam-1{
     animation: steam-1-animation 1s ease-out infinite;
+    background: red;
 }
 
 @keyframes steam-1-animation {
@@ -208,6 +208,7 @@ body{
 
 .steam-2{
     animation: steam-2-animation 2s ease-out infinite;
+    background: #000;
 }
 
 @keyframes steam-2-animation {
@@ -223,6 +224,7 @@ body{
 
 .steam-3{
     animation: steam-3-animation 3s ease-out infinite;
+    background: yellow;
 }
 
 @keyframes steam-3-animation {
@@ -238,6 +240,7 @@ body{
 
 .steam-4{
     animation: steam-4-animation 4s ease-in-out infinite;
+    background: green;
 }
 
 @keyframes steam-4-animation {
@@ -253,6 +256,7 @@ body{
 
 .steam-5{
     animation: steam-5-animation 5s ease-in-out infinite;
+    background: var(--color-primary);
 }
 
 @keyframes steam-5-animation {
@@ -268,6 +272,7 @@ body{
 
 .steam-6{
     animation: steam-6-animation 6s ease-in infinite;
+    background: var(--color-secondary);
 }
 
 @keyframes steam-6-animation {
