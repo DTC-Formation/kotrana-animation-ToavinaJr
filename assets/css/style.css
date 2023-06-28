@@ -5,10 +5,17 @@
     overflow-x: hidden;
 }
 
+:root{
+    --color-primary: #828282;
+    --color-secondary: #3578E5;
+    --color-thirdly: #fff;
+}
+
 body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background: var(--color-primary);
 }
 
 .container{
@@ -26,6 +33,9 @@ body{
     width: 350px;
     height: fit-content;
     overflow-y: hidden;
+    background: var(--color-thirdly);
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 .mario{
@@ -121,12 +131,13 @@ body{
     text-align: center;
     width: 350px;
     font-size: 50px;
-    background: #161515;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    background: var(--color-thirdly);
     animation: wiggle 2s linear infinite;
-    color: #e5e90d;
+    color: var(--color-secondary);
     height: fit-content;
     border-radius: 10px;
-    border-bottom: solid 5px crimson;
+    border-bottom: solid 5px rgba(185, 24, 24, 0.884);
 }
 
 @keyframes wiggle {
@@ -151,8 +162,9 @@ body{
 /* *************************************** */
 
 .steam-container{
-    background: rgb(81, 81, 243);
+    background: var(--color-thirdly);
     border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     width: 350px;
     height: 350px;
     position: relative;
@@ -163,7 +175,7 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--color-primary);
     position: absolute;
     top: 300px;
     left: 40%;
@@ -285,10 +297,14 @@ body{
 
 .buble-container{
     display: flex;
-    width: 200px;
+    width: 350px;
     height: 120px;
     align-items: center;
     justify-content: space-evenly;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    background: var(--color-thirdly);
+    border-radius: 10px;
+
 }
 
 .buble{
